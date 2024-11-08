@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Models;
+namespace Modules\Order\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class OrderLine extends Model
 {
-    /** @use HasFactory<\Database\Factories\ProductFactory> */
+    /** @use HasFactory<\Database\Factories\OrderLineFactory> */
     use HasFactory;
 }

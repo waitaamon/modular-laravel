@@ -9,4 +9,17 @@ class OrderLine extends Model
 {
     /** @use HasFactory<\Database\Factories\OrderLineFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'order_id',
+        'product_id',
+        'product_price_in_cents',
+        'quantity',
+    ];
+    protected $casts = [
+        'order_id' => 'integer',
+        'product_id' => 'integer',
+        'product_price_in_cents' => 'integer',
+        'quantity' => 'integer',
+    ];
 }

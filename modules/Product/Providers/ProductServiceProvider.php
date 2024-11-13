@@ -14,7 +14,7 @@ class ProductServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
-        $this->mergeConfigFrom(__DIR__ . '/../config.php', 'order');
+        $this->mergeConfigFrom(__DIR__ . '/../config.php', 'product');
 
         $this->app->register(RouteServiceProvider::class);
     }

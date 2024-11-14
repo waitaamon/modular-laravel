@@ -19,7 +19,7 @@ class CartItemCollection
     {
         $cartItems = collect($data)
             ->map(fn(array $cartItemDetails) => new CartItem(
-                product: ProductDto::fromEloquentModel(Product::find($cartItemDetails['product_id'])),
+                product: ProductDto::fromEloquentModel(Product::find($cartItemDetails['id'])),
                 quantity: $cartItemDetails['quantity']
             ));
 

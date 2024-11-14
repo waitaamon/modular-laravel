@@ -17,5 +17,6 @@ class ProductServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__ . '/../config.php', 'product');
 
         $this->app->register(RouteServiceProvider::class);
+        $this->app->register(EventServiceProvider::class);
     }
 }
